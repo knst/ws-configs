@@ -1,7 +1,6 @@
-" Filetypes
-au BufRead,BufNewFile *.lap set filetype=lyapas
+" My vim rc.
+" author: knst
 
-syntax on
 set showcmd
 set ruler
 " показывать закрывающую скобку
@@ -41,10 +40,17 @@ set splitbelow
 set splitright
 
 set foldmethod=manual
-set foldmethod=syntax
+" set foldmethod=syntax
 
 " дополнение
 set completeopt=longest,menuone
+
+if has("autocmd")
+    au FileType cpp,c,pl set cindent
+
+
+endif
+
 
 set hlsearch
 set incsearch
@@ -65,7 +71,6 @@ set wcm=<TAB>
 map <S-TAB> :tabprevious<CR>
 nmap <S-TAB> :tabprevious<CR>
 imap <S-TAB> <Esc>:tabprevious<CR>i
-
 map <TAB> :tabnext<CR>
 "nmap <TAB> :tabnext<CR>
 "imap <TAB> <Esc>:tabnext<CR>i
@@ -73,7 +78,8 @@ map <TAB> :tabnext<CR>
 " Открытие\закрытие новой вкладки по CTRL+T и CTRL+W
 nmap <C-t> :tabnew<CR>
 imap <C-t> <Esc>:tabnew<CR>a
-nmap <C-w> :tabclose<CR>
-imap <C-w> <Esc>:tabclose<CR>
+"nmap <C-w> :tabclose<CR>
+"imap <C-w> <Esc>:tabclose<CR>
 
 imap jk <Esc>
+
