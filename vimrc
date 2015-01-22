@@ -54,7 +54,7 @@ endif
 
 set hlsearch
 set incsearch
-nnoremap * *N
+" nnoremap * *N
 " ищет с учётом регистра, если есть хоть одна заглавная
 set smartcase
 set infercase
