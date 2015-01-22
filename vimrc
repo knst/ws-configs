@@ -83,3 +83,4 @@ imap <C-t> <Esc>:tabnew<CR>a
 
 imap jk <Esc>
 
+set textwidth=0 wrapmargin=0
