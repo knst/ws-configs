@@ -46,11 +46,9 @@ set foldmethod=manual
 set completeopt=longest,menuone
 
 if has("autocmd")
-    au FileType cpp,c,pl set cindent
-
-
+    autocmd FileType c,cpp,pl set cindent
+    autocmd FileType c,cpp,pl autocmd BufWritePre <buffer> :%s/\s\+$//e
 endif
-
 
 set hlsearch
 set incsearch
@@ -83,4 +81,5 @@ imap <C-t> <Esc>:tabnew<CR>a
 
 imap jk <Esc>
 
-set textwidth=0 wrapmargin=0
+set wrapmargin=0
+set textwidth=0
