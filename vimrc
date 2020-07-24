@@ -17,7 +17,7 @@ set confirm
 set hidden
 set t_Co=256
 set background=dark
-set number
+" set number
 set smartindent
 " удалять по tab'у, добавлять столько же
 set smarttab
