@@ -46,8 +46,10 @@ set foldmethod=manual
 set completeopt=longest,menuone
 
 if has("autocmd")
+    autocmd FileType java set noexpandtab
     autocmd FileType c,cpp,pl set cindent
     autocmd FileType c,cpp,pl autocmd BufWritePre <buffer> :%s/\s\+$//e
+    au BufNewFile,BufRead *.gradle setf groovy
 endif
 
 set hlsearch
