@@ -1,5 +1,8 @@
-# vimrc
-My vimrc.
+# Configs
 
-Important!
-This config required directory ~/.vim/swap for swap files.
+Here are some default configs:
+ - vimrc
+ - bashrc
+ - tmux
+
+WARN: This config requires to create a directory ~/.vim/swap for swap files.
