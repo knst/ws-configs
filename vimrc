@@ -85,3 +85,5 @@ imap jk <Esc>
 
 set wrapmargin=0
 set textwidth=0
+
+set diffopt+=algorithm:patience
